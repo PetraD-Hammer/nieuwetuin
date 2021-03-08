@@ -1,0 +1,32 @@
+uuid: 0b65dbe1-6549-43a0-a1ef-ecb5be2914e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - field.storage.block_content.field_bel_mij_terug
+    - webform.webform.offerte
+  module:
+    - webform
+id: block_content.basic.field_bel_mij_terug
+field_name: field_bel_mij_terug
+entity_type: block_content
+bundle: basic
+label: 'Bel mij terug'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+    target_uuid: 1cfae220-df1e-47fe-a60c-0ae88ae7a8c0
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

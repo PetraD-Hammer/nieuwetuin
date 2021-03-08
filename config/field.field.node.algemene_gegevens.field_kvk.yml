@@ -1,0 +1,23 @@
+uuid: 6435ed95-4bc7-40dc-8c34-57af7768d144
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_kvk
+    - node.type.algemene_gegevens
+id: node.algemene_gegevens.field_kvk
+field_name: field_kvk
+entity_type: node
+bundle: algemene_gegevens
+label: KvK
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

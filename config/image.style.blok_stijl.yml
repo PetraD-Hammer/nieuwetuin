@@ -1,0 +1,15 @@
+uuid: fb478dc9-48a4-45a9-9371-3c01a6a22c21
+langcode: en
+status: true
+dependencies: {  }
+name: blok_stijl
+label: 'blok stijl'
+effects:
+  206211ed-5e42-4f9e-a0ed-2a4fd4b63de3:
+    uuid: 206211ed-5e42-4f9e-a0ed-2a4fd4b63de3
+    id: image_scale
+    weight: 1
+    data:
+      width: 308
+      height: null
+      upscale: false

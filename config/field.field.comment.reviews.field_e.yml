@@ -1,0 +1,19 @@
+uuid: 2d448f64-7573-42ac-88e8-02dfb569aa5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.reviews
+    - field.storage.comment.field_e
+id: comment.reviews.field_e
+field_name: field_e
+entity_type: comment
+bundle: reviews
+label: 'Email adres'
+description: 'Uw email adres wordt niet gepubliceerd op de site'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

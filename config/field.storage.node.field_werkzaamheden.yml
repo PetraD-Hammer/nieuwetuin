@@ -1,0 +1,20 @@
+uuid: 72a1194b-b112-4870-81aa-c187d76b3c16
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_werkzaamheden
+field_name: field_werkzaamheden
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

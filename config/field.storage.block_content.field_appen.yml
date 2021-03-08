@@ -1,0 +1,19 @@
+uuid: 453fed25-a1ba-4a12-a8c0-7f99719550ab
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_appen
+field_name: field_appen
+entity_type: block_content
+type: entity_reference
+settings:
+  target_type: field_config
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,30 @@
+uuid: 35e84e38-5a9a-46ce-bc9f-622a8d1e1314
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:contact_blok:0549037e-a0da-4642-875b-06669b38b724'
+  module:
+    - block_content
+    - system
+  theme:
+    - jim_barrio
+id: reviews_contactblok
+theme: jim_barrio
+region: content
+weight: -3
+provider: null
+plugin: 'block_content:0549037e-a0da-4642-875b-06669b38b724'
+settings:
+  id: 'block_content:0549037e-a0da-4642-875b-06669b38b724'
+  label: 'Reviews contactblok'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /reviews
+    negate: false

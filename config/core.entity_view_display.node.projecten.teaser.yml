@@ -1,0 +1,36 @@
+uuid: 2ac71c0a-22dd-4da1-b7e5-81cfb13f5700
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.projecten.field_eindresultaat
+    - field.field.node.projecten.field_klantgegevens
+    - field.field.node.projecten.field_mail
+    - field.field.node.projecten.field_opdracht
+    - field.field.node.projecten.field_projectfoto
+    - field.field.node.projecten.field_reacties
+    - field.field.node.projecten.field_situat
+    - field.field.node.projecten.field_werkzaamheden
+    - node.type.projecten
+  module:
+    - user
+id: node.projecten.teaser
+targetEntityType: node
+bundle: projecten
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_eindresultaat: true
+  field_klantgegevens: true
+  field_mail: true
+  field_opdracht: true
+  field_projectfoto: true
+  field_reacties: true
+  field_situat: true
+  field_werkzaamheden: true

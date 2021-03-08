@@ -1,0 +1,33 @@
+uuid: ee45effc-4455-45e4-9491-b8503d706885
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:contact_blok_rechtsom:11fd6d78-1e7f-47b1-bebc-b8c1fc98387b'
+  module:
+    - block_content
+    - node
+  theme:
+    - jim_barrio
+id: contactmetjimrechtsom
+theme: jim_barrio
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:11fd6d78-1e7f-47b1-bebc-b8c1fc98387b'
+settings:
+  id: 'block_content:11fd6d78-1e7f-47b1-bebc-b8c1fc98387b'
+  label: 'Contact met Jim rechtsom'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      projecten: projecten
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

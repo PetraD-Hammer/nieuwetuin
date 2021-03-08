@@ -1,0 +1,22 @@
+uuid: 7fbdf815-1bf1-4e7c-8d99-f5bcfca1de4f
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - jim_barrio
+_core:
+  default_config_hash: JPtjio142VL7z1Y-K1aWkTXu5wId7r4-zNUHozwLqf0
+id: jim_barrio_help
+theme: jim_barrio
+region: content
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

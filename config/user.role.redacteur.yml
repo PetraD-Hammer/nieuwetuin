@@ -1,0 +1,18 @@
+uuid: fedbc510-886b-4ccd-9fd6-10e7a173d599
+langcode: en
+status: true
+dependencies: {  }
+id: redacteur
+label: Redacteur
+weight: -8
+is_admin: null
+permissions:
+  - 'access in-place editing'
+  - 'create and edit custom blocks'
+  - 'create image media'
+  - 'create projecten content'
+  - 'create video media'
+  - 'edit any algemene_gegevens content'
+  - 'edit own projecten content'
+  - 'use text format restricted_html'
+  - 'view all revisions'

@@ -1,0 +1,18 @@
+uuid: 00c09cf4-fba7-404a-9344-1d6d7fe7bbcd
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Projecten
+type: projecten
+description: 'Ieder project heeft zijn eigen pagina. Klant wordt uitgenodigd om een review achter te laten na afronding van zijn klus'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

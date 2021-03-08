@@ -1,0 +1,23 @@
+uuid: 5149a387-a4bb-47bd-85c9-d5c17f8b22c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_over_het_bedrijf
+    - node.type.algemene_gegevens
+  module:
+    - text
+id: node.algemene_gegevens.field_over_het_bedrijf
+field_name: field_over_het_bedrijf
+entity_type: node
+bundle: algemene_gegevens
+label: 'Over het bedrijf'
+description: 'Vertel wat over het bedrijf. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

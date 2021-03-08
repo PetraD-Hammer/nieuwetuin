@@ -1,0 +1,74 @@
+uuid: a7374d7a-1d43-47ff-977f-aec918488017
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.algemene_gegevens.field_bedrijfsadres
+    - field.field.node.algemene_gegevens.field_btw
+    - field.field.node.algemene_gegevens.field_fotootje
+    - field.field.node.algemene_gegevens.field_iets_over_jezelf
+    - field.field.node.algemene_gegevens.field_kvk
+    - field.field.node.algemene_gegevens.field_over_het_bedrijf
+    - node.type.algemene_gegevens
+  module:
+    - address
+    - text
+    - user
+id: node.algemene_gegevens.default
+targetEntityType: node
+bundle: algemene_gegevens
+mode: default
+content:
+  field_bedrijfsadres:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_btw:
+    weight: 6
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_fotootje:
+    type: entity_reference_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_iets_over_jezelf:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_kvk:
+    weight: 5
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_over_het_bedrijf:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

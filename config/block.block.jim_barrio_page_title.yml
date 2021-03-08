@@ -1,0 +1,26 @@
+uuid: 036a2a6d-7234-4203-9c98-fa148498e0a0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - jim_barrio
+_core:
+  default_config_hash: _0ZyPKUqcQMu9FlcCoa_Y-No4zdv-wUNF4hlSj60yi0
+id: jim_barrio_page_title
+theme: jim_barrio
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true

@@ -1,0 +1,25 @@
+uuid: 1b0bf523-3ec8-4918-8261-d8488881148c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - jim_barrio
+id: jim_barrio_mainnavigation
+theme: jim_barrio
+region: header
+weight: -4
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

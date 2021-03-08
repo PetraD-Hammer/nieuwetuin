@@ -1,0 +1,38 @@
+uuid: c2760338-fb91-450a-9269-d1d2ac27e772
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_projectfoto
+    - node.type.projecten
+  module:
+    - image
+id: node.projecten.field_projectfoto
+field_name: field_projectfoto
+entity_type: node
+bundle: projecten
+label: Projectfoto
+description: 'Foto''s van het project. Zowel de vooraf foto''s, eventuele werkfoto''s en natuurlijk het resultaat.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: 150kb
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

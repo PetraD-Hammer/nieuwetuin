@@ -1,0 +1,80 @@
+uuid: 266866bb-fd79-4ad5-b4a5-a77b20110a05
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.timmer_werkzaamheden_tuin.field_foto
+    - field.field.taxonomy_term.timmer_werkzaamheden_tuin.field_fotowerkzaamheden
+    - field.field.taxonomy_term.timmer_werkzaamheden_tuin.field_info
+    - field.field.taxonomy_term.timmer_werkzaamheden_tuin.field_valkuilen
+    - field.field.taxonomy_term.timmer_werkzaamheden_tuin.field_voordelen
+    - image.style.thumbnail
+    - taxonomy.vocabulary.timmer_werkzaamheden_tuin
+  module:
+    - image
+    - text
+id: taxonomy_term.timmer_werkzaamheden_tuin.default
+targetEntityType: taxonomy_term
+bundle: timmer_werkzaamheden_tuin
+mode: default
+content:
+  field_fotowerkzaamheden:
+    weight: 6
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_info:
+    weight: 3
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_valkuilen:
+    weight: 4
+    settings:
+      size: 120
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_voordelen:
+    weight: 5
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  menu:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 2
+    region: content
+    third_party_settings: {  }
+hidden:
+  description: true
+  field_foto: true
+  path: true

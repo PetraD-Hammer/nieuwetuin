@@ -1,0 +1,20 @@
+uuid: 8b7026cb-b302-4372-8f9c-cecea0ad7eb7
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - media
+id: block_content.field_fotojim
+field_name: field_fotojim
+entity_type: block_content
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

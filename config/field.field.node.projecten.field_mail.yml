@@ -1,0 +1,19 @@
+uuid: fd237f76-2398-404e-a328-828f89199231
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mail
+    - node.type.projecten
+id: node.projecten.field_mail
+field_name: field_mail
+entity_type: node
+bundle: projecten
+label: 'mail klant'
+description: 'Mail adres van de klant zodat deze wordt uitgenodigd voor een reactie'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

@@ -1,0 +1,8 @@
+uuid: 1815f08f-0612-46cf-bac7-23154b98cb14
+langcode: en
+status: true
+dependencies: {  }
+id: tekst_blok
+label: 'Tekst blok'
+revision: 0
+description: 'Blok zonder title met alleen tekst'

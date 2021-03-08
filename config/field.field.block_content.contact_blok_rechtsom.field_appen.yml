@@ -1,0 +1,26 @@
+uuid: 6a340d38-05b2-4c3c-8f6b-553d88390b10
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_blok_rechtsom
+    - field.field.block_content.contact_blok.field_appen
+    - field.storage.block_content.field_appen
+id: block_content.contact_blok_rechtsom.field_appen
+field_name: field_appen
+entity_type: block_content
+bundle: contact_blok_rechtsom
+label: Appen
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    target_uuid: 221fd274-180a-4810-8ef4-8f96fcbe1646
+default_value_callback: ''
+settings:
+  handler: 'default:field_config'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

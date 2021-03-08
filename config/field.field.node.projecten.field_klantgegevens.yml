@@ -1,0 +1,62 @@
+uuid: 34fb08d4-c12f-4c0d-bffd-4765b6ae3bad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_klantgegevens
+    - node.type.projecten
+  module:
+    - address
+id: node.projecten.field_klantgegevens
+field_name: field_klantgegevens
+entity_type: node
+bundle: projecten
+label: Klantgegevens
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    country_code: NL
+    langcode: ''
+    organization: ''
+    given_name: ''
+    family_name: ''
+    address_line1: ''
+    address_line2: ''
+    postal_code: ''
+    locality: ''
+    additional_name: null
+    sorting_code: null
+    dependent_locality: null
+    administrative_area: null
+default_value_callback: ''
+settings:
+  available_countries:
+    NL: NL
+  langcode_override: ''
+  field_overrides:
+    givenName:
+      override: optional
+    additionalName:
+      override: optional
+    familyName:
+      override: optional
+    organization:
+      override: optional
+    addressLine1:
+      override: required
+    addressLine2:
+      override: hidden
+    postalCode:
+      override: optional
+    sortingCode:
+      override: hidden
+    dependentLocality:
+      override: hidden
+    locality:
+      override: required
+    administrativeArea:
+      override: hidden
+  fields: {  }
+field_type: address

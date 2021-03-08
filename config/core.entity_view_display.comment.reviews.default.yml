@@ -1,0 +1,33 @@
+uuid: 806e47ac-0416-4b7f-a138-e23a2c206610
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.reviews
+    - field.field.comment.reviews.comment_body
+    - field.field.comment.reviews.field_e
+    - field.field.comment.reviews.field_naam
+  module:
+    - text
+id: comment.reviews.default
+targetEntityType: comment
+bundle: reviews
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_naam:
+    weight: 0
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  field_e: true
+  links: true

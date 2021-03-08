@@ -1,0 +1,22 @@
+uuid: 807ef5aa-eea4-4dcf-aa86-5376097180c0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: reviews
+label: Reviews
+type: 'canonical_entities:node'
+pattern: '/reviews/[node:title]'
+selection_criteria:
+  51bb4d7c-c783-435b-af71-b2b041920ead:
+    id: node_type
+    bundles:
+      projecten: projecten
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 51bb4d7c-c783-435b-af71-b2b041920ead
+selection_logic: and
+weight: -5
+relationships: {  }

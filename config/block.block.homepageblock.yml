@@ -1,0 +1,30 @@
+uuid: c6bec9a7-0ce7-457a-bb87-95088dd3f279
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:homepage_over_ons:79d66367-3d87-40b0-8efa-1cc127d22483'
+  module:
+    - block_content
+    - system
+  theme:
+    - jim_barrio
+id: homepageblock
+theme: jim_barrio
+region: content
+weight: -1
+provider: null
+plugin: 'block_content:79d66367-3d87-40b0-8efa-1cc127d22483'
+settings:
+  id: 'block_content:79d66367-3d87-40b0-8efa-1cc127d22483'
+  label: 'homepage block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

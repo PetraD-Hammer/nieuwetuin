@@ -1,0 +1,122 @@
+uuid: 8b696060-b228-40a4-ac18-0da903bb51ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.algemene_gegevens.field_bedrijfsadres
+    - field.field.node.algemene_gegevens.field_btw
+    - field.field.node.algemene_gegevens.field_fotootje
+    - field.field.node.algemene_gegevens.field_iets_over_jezelf
+    - field.field.node.algemene_gegevens.field_kvk
+    - field.field.node.algemene_gegevens.field_over_het_bedrijf
+    - node.type.algemene_gegevens
+  module:
+    - address
+    - media_library
+    - path
+    - text
+id: node.algemene_gegevens.default
+targetEntityType: node
+bundle: algemene_gegevens
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_bedrijfsadres:
+    weight: 122
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_btw:
+    weight: 124
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_fotootje:
+    type: media_library_widget
+    weight: 127
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_iets_over_jezelf:
+    weight: 126
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_kvk:
+    weight: 123
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_over_het_bedrijf:
+    weight: 125
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden: {  }

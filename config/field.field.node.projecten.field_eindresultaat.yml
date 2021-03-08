@@ -1,0 +1,23 @@
+uuid: de4e3b35-013e-42be-a17d-619310f167b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_eindresultaat
+    - node.type.projecten
+  module:
+    - text
+id: node.projecten.field_eindresultaat
+field_name: field_eindresultaat
+entity_type: node
+bundle: projecten
+label: Eindresultaat
+description: 'Hoe is het eindresultaat geworden. Hoe lang is er nodig geweest om dit te bereiken?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

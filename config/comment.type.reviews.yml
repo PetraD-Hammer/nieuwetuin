@@ -1,0 +1,8 @@
+uuid: 8035a748-fd40-483c-ba0e-5808f8b9c461
+langcode: en
+status: true
+dependencies: {  }
+id: reviews
+label: Reviews
+target_entity_type_id: node
+description: 'Klant reviews bij de projecten'

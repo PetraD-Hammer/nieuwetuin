@@ -1,0 +1,39 @@
+uuid: d16cabbd-ea3e-40ba-bc9f-49846944868d
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.reviews
+    - core.entity_view_mode.comment.teaser_review
+    - field.field.comment.reviews.comment_body
+    - field.field.comment.reviews.field_e
+    - field.field.comment.reviews.field_naam
+  module:
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: comment.reviews.teaser_review
+targetEntityType: comment
+bundle: reviews
+mode: teaser_review
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_naam:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  field_e: true
+  links: true

@@ -1,0 +1,30 @@
+uuid: 027c2bce-7309-4800-a870-e8b52c7f76bd
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:contact_blok:1c8a7149-50c8-4d23-a9d2-55d15a2c9e6d'
+  module:
+    - block_content
+    - system
+  theme:
+    - jim_barrio
+id: nogeencontactblok
+theme: jim_barrio
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:1c8a7149-50c8-4d23-a9d2-55d15a2c9e6d'
+settings:
+  id: 'block_content:1c8a7149-50c8-4d23-a9d2-55d15a2c9e6d'
+  label: 'Contactblok bij de werkzaamheden'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '/taxonomy/term/*'
+    negate: false

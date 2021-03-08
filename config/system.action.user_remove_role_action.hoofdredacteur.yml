@@ -1,0 +1,14 @@
+uuid: 7145f44e-404e-4df2-ade9-bd7b3d712a30
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.hoofdredacteur
+  module:
+    - user
+id: user_remove_role_action.hoofdredacteur
+label: 'Remove the Hoofdredacteur role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: hoofdredacteur

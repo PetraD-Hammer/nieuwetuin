@@ -1,0 +1,33 @@
+uuid: 43e9675f-dc90-495d-93ec-f9cecb64469c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_blok_rechtsom
+    - field.storage.block_content.field_fotojim
+    - media.type.image
+  content:
+    - 'media:image:2b670d82-8164-4d47-9251-d1a363b7c80d'
+id: block_content.contact_blok_rechtsom.field_fotojim
+field_name: field_fotojim
+entity_type: block_content
+bundle: contact_blok_rechtsom
+label: FotoJim
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    target_uuid: 2b670d82-8164-4d47-9251-d1a363b7c80d
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

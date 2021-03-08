@@ -1,0 +1,29 @@
+uuid: 5e234fd7-6fcb-4709-831c-c48ad65df649
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:tekst_blok:fcc5b596-29cd-4a9c-b3e7-0c74120fa815'
+  module:
+    - block_classes
+    - block_content
+  theme:
+    - jim_barrio
+third_party_settings:
+  block_classes:
+    block_class: 'pt-3 pb-3'
+id: locatieswaargewerktwordt_2
+theme: jim_barrio
+region: featured_bottom_second
+weight: 0
+provider: null
+plugin: 'block_content:fcc5b596-29cd-4a9c-b3e7-0c74120fa815'
+settings:
+  id: 'block_content:fcc5b596-29cd-4a9c-b3e7-0c74120fa815'
+  label: 'Locaties waar gewerkt wordt'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

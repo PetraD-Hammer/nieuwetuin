@@ -1,0 +1,27 @@
+uuid: 40067b40-19e7-4997-be28-ae14ef1a040a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.werkzaamheden_blok
+    - field.field.block_content.werkzaamheden_blok.field_werkonderdeel
+id: block_content.werkzaamheden_blok.default
+targetEntityType: block_content
+bundle: werkzaamheden_blok
+mode: default
+content:
+  field_werkonderdeel:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,19 @@
+uuid: 4ae340e8-236a-414e-b283-6f5e185c3f74
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_iets_over_jezelf
+field_name: field_iets_over_jezelf
+entity_type: node
+type: text_with_summary
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

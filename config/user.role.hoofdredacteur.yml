@@ -1,0 +1,42 @@
+uuid: f5832149-05d3-4dab-9b29-79a274667975
+langcode: en
+status: true
+dependencies: {  }
+id: hoofdredacteur
+label: Hoofdredacteur
+weight: -7
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access in-place editing'
+  - 'administer webform'
+  - 'create and edit custom blocks'
+  - 'create image media'
+  - 'create projecten content'
+  - 'create video media'
+  - 'delete all revisions'
+  - 'delete any contact_blok block content'
+  - 'delete any image media'
+  - 'delete any projecten content'
+  - 'delete any video media'
+  - 'delete own image media'
+  - 'delete own projecten content'
+  - 'edit any algemene_gegevens content'
+  - 'edit any page content'
+  - 'edit any projecten content'
+  - 'edit own projecten content'
+  - 'edit terms in timmer_werkzaamheden_tuin'
+  - 'revert algemene_gegevens revisions'
+  - 'revert all revisions'
+  - 'revert page revisions'
+  - 'revert projecten revisions'
+  - 'update any basic block content'
+  - 'update any contact_blok block content'
+  - 'update any tekst_blok block content'
+  - 'update any werkzaamheden_blok block content'
+  - 'use text format restricted_html'
+  - 'view algemene_gegevens revisions'
+  - 'view all revisions'
+  - 'view own unpublished content'
+  - 'view page revisions'
+  - 'view projecten revisions'

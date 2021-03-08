@@ -1,0 +1,54 @@
+uuid: 5e9f68ca-8092-42f3-81ec-7925457e2e02
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bedrijfsadres
+    - node.type.algemene_gegevens
+  module:
+    - address
+id: node.algemene_gegevens.field_bedrijfsadres
+field_name: field_bedrijfsadres
+entity_type: node
+bundle: algemene_gegevens
+label: Bedrijfsadres
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    langcode: ''
+    country_code: NL
+    administrative_area: null
+    locality: ''
+    dependent_locality: null
+    postal_code: ''
+    sorting_code: null
+    address_line1: ''
+    address_line2: ''
+    organization: ''
+    given_name: null
+    additional_name: null
+    family_name: null
+default_value_callback: ''
+settings:
+  available_countries:
+    NL: NL
+  langcode_override: ''
+  field_overrides:
+    givenName:
+      override: hidden
+    additionalName:
+      override: hidden
+    familyName:
+      override: optional
+    organization:
+      override: required
+    addressLine1:
+      override: required
+    postalCode:
+      override: required
+    locality:
+      override: required
+  fields: {  }
+field_type: address

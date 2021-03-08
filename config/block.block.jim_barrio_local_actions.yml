@@ -1,0 +1,20 @@
+uuid: 9d624951-23c4-476a-b397-6e2f37b6a53c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - jim_barrio
+_core:
+  default_config_hash: rKurRLaH08AjwE5wsNzeL2fa77rF5pXKSR9WopsFYyI
+id: jim_barrio_local_actions
+theme: jim_barrio
+region: content
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,8 @@
+uuid: 64438ac0-f3f1-458c-8dbe-d87cb802765e
+langcode: en
+status: true
+dependencies: {  }
+id: contact_blok
+label: 'Contact blok'
+revision: 0
+description: 'Blok voor een klant om rechtstreeks een offerte aan te vragen'

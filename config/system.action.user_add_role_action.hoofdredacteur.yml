@@ -1,0 +1,14 @@
+uuid: 1cc89d5a-f1c1-4531-819d-e065995ec5a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.hoofdredacteur
+  module:
+    - user
+id: user_add_role_action.hoofdredacteur
+label: 'Add the Hoofdredacteur role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: hoofdredacteur

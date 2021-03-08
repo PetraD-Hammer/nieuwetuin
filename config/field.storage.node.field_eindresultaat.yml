@@ -1,0 +1,19 @@
+uuid: 6132d9f6-57f5-4d2d-8101-95a9482382d7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_eindresultaat
+field_name: field_eindresultaat
+entity_type: node
+type: text_with_summary
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,72 @@
+uuid: 9273fd65-cdb0-4453-8a2f-e49f72878ac1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_blok_rechtsom
+    - field.field.block_content.contact_blok_rechtsom.body
+    - field.field.block_content.contact_blok_rechtsom.field_appen
+    - field.field.block_content.contact_blok_rechtsom.field_fotojim
+  module:
+    - ds
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col
+      library: ds/ds_2col
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      left:
+        - body
+        - field_appen
+        - 'dynamic_token_field:block_content-appfield'
+      right:
+        - field_fotojim
+    fields:
+      'dynamic_token_field:block_content-appfield':
+        plugin_id: 'dynamic_token_field:block_content-appfield'
+        weight: 2
+        label: hidden
+        formatter: default
+id: block_content.contact_blok_rechtsom.default
+targetEntityType: block_content
+bundle: contact_blok_rechtsom
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: left
+  field_appen:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: entity_reference_entity_id
+    region: left
+  field_fotojim:
+    weight: 3
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: right
+hidden: {  }

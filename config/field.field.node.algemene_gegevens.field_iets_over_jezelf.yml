@@ -1,0 +1,23 @@
+uuid: 51f52399-9107-4cdd-a3f1-5361b322af81
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_iets_over_jezelf
+    - node.type.algemene_gegevens
+  module:
+    - text
+id: node.algemene_gegevens.field_iets_over_jezelf
+field_name: field_iets_over_jezelf
+entity_type: node
+bundle: algemene_gegevens
+label: 'Iets over jezelf'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

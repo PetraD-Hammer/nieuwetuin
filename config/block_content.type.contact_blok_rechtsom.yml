@@ -1,0 +1,8 @@
+uuid: 83e275c7-9ef9-48e2-b048-09f78e4f486d
+langcode: en
+status: true
+dependencies: {  }
+id: contact_blok_rechtsom
+label: 'Contact blok rechtsom'
+revision: 0
+description: 'Foto bij dit blok staat rechts'

@@ -1,0 +1,29 @@
+uuid: 29058039-7196-4ad7-9e7a-057a1556c59a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.reviewsblock
+  module:
+    - system
+    - views
+  theme:
+    - jim_barrio
+id: views_block__reviewsblock_block_1
+theme: jim_barrio
+region: content
+weight: 1
+provider: null
+plugin: 'views_block:reviewsblock-block_1'
+settings:
+  id: 'views_block:reviewsblock-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/taxonomy/term/*"
+    negate: false

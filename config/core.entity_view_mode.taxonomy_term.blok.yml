@@ -1,0 +1,10 @@
+uuid: 194c8ae9-2cc1-4b36-b7ed-2192d25a36b6
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.blok
+label: blok
+targetEntityType: taxonomy_term
+cache: true

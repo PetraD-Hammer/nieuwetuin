@@ -1,0 +1,22 @@
+uuid: 28d5a4b4-8fbe-4020-950d-dd841cc0680d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - jim_barrio
+_core:
+  default_config_hash: IzSbK3zk-Gon9y7WLEWop15Wn__7LeKzBJIXqajlb00
+id: jim_barrio_local_tasks
+theme: jim_barrio
+region: content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

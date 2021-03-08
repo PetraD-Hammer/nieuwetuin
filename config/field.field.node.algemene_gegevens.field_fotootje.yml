@@ -1,0 +1,34 @@
+uuid: 9011ddfb-aca6-4fc8-b113-63a06db1561e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fotootje
+    - media.type.image
+    - node.type.algemene_gegevens
+  content:
+    - 'media:image:bcc02557-9e6e-4275-b1d7-4c16a68744bd'
+id: node.algemene_gegevens.field_fotootje
+field_name: field_fotootje
+entity_type: node
+bundle: algemene_gegevens
+label: Fotootje
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    weight: 0
+    target_uuid: bcc02557-9e6e-4275-b1d7-4c16a68744bd
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

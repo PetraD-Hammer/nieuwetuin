@@ -1,0 +1,15 @@
+uuid: df5ca85c-46ad-4646-80e6-091d9a3aa95b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Timmer werkzaamheden tuin'
+vid: timmer_werkzaamheden_tuin
+description: 'Alle werkzaamheden uitgevoerd door de timmerman in de tuin'
+weight: 0

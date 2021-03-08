@@ -1,0 +1,20 @@
+uuid: fdefaa97-821a-4c82-9938-99f1aa51c130
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - taxonomy
+id: block_content.field_werkonderdeel
+field_name: field_werkonderdeel
+entity_type: block_content
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

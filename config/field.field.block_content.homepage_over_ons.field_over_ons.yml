@@ -1,0 +1,33 @@
+uuid: 23494cd3-3614-448a-93f3-1ac7c39d3ac5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.homepage_over_ons
+    - field.storage.block_content.field_over_ons
+    - node.type.algemene_gegevens
+  content:
+    - 'node:algemene_gegevens:9aca0708-419b-453a-8916-344cae1a1d9e'
+id: block_content.homepage_over_ons.field_over_ons
+field_name: field_over_ons
+entity_type: block_content
+bundle: homepage_over_ons
+label: 'Over ons'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 9aca0708-419b-453a-8916-344cae1a1d9e
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      algemene_gegevens: algemene_gegevens
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

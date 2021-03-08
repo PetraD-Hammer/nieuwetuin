@@ -1,0 +1,40 @@
+uuid: f106e4b1-199c-4d16-90a9-44391ac21176
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.blok
+    - field.field.taxonomy_term.timmer_werkzaamheden_tuin.field_foto
+    - field.field.taxonomy_term.timmer_werkzaamheden_tuin.field_fotowerkzaamheden
+    - field.field.taxonomy_term.timmer_werkzaamheden_tuin.field_info
+    - field.field.taxonomy_term.timmer_werkzaamheden_tuin.field_valkuilen
+    - field.field.taxonomy_term.timmer_werkzaamheden_tuin.field_voordelen
+    - image.style.blok_stijl
+    - taxonomy.vocabulary.timmer_werkzaamheden_tuin
+  module:
+    - image
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: taxonomy_term.timmer_werkzaamheden_tuin.blok
+targetEntityType: taxonomy_term
+bundle: timmer_werkzaamheden_tuin
+mode: blok
+content:
+  field_fotowerkzaamheden:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: blok_stijl
+      image_link: content
+    third_party_settings: {  }
+hidden:
+  description: true
+  field_foto: true
+  field_info: true
+  field_valkuilen: true
+  field_voordelen: true

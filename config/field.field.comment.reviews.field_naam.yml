@@ -1,0 +1,21 @@
+uuid: c4f53b35-a769-4c34-a37e-a5eb008d0a52
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.reviews
+    - field.storage.comment.field_naam
+  module:
+    - text
+id: comment.reviews.field_naam
+field_name: field_naam
+entity_type: comment
+bundle: reviews
+label: Naam
+description: 'Wat is uw naam?'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

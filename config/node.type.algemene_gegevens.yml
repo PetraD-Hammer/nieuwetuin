@@ -1,0 +1,18 @@
+uuid: fc4fa3e6-e79b-475d-86d2-9d3aa6a09a0c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Algemene gegevens'
+type: algemene_gegevens
+description: 'Vul hier alle persoonlijke gegevens over het bedrijf en jezelf in'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

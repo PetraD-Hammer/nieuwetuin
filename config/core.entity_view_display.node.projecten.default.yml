@@ -1,0 +1,81 @@
+uuid: b0304534-68ae-4a38-ac36-055d602501ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.reviews.default
+    - field.field.node.projecten.field_eindresultaat
+    - field.field.node.projecten.field_klantgegevens
+    - field.field.node.projecten.field_mail
+    - field.field.node.projecten.field_opdracht
+    - field.field.node.projecten.field_projectfoto
+    - field.field.node.projecten.field_reacties
+    - field.field.node.projecten.field_situat
+    - field.field.node.projecten.field_werkzaamheden
+    - image.style.wide
+    - node.type.projecten
+  module:
+    - comment
+    - image
+    - text
+    - user
+id: node.projecten.default
+targetEntityType: node
+bundle: projecten
+mode: default
+content:
+  field_eindresultaat:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_opdracht:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_projectfoto:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: wide
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_reacties:
+    weight: 6
+    label: hidden
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
+    region: content
+  field_situat:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_werkzaamheden:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_klantgegevens: true
+  field_mail: true

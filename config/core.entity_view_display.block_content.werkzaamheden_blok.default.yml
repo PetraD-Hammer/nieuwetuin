@@ -1,0 +1,22 @@
+uuid: 9da29013-4a06-4b5c-abc1-acd4c5615d70
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.werkzaamheden_blok
+    - field.field.block_content.werkzaamheden_blok.field_werkonderdeel
+id: block_content.werkzaamheden_blok.default
+targetEntityType: block_content
+bundle: werkzaamheden_blok
+mode: default
+content:
+  field_werkonderdeel:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: blok
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

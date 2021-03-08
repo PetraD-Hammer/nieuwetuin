@@ -1,0 +1,23 @@
+uuid: d1548545-b22f-4ea6-8fa3-cf8b17bab383
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_opdracht
+    - node.type.projecten
+  module:
+    - text
+id: node.projecten.field_opdracht
+field_name: field_opdracht
+entity_type: node
+bundle: projecten
+label: Opdracht
+description: 'Wat was de opdracht? Zijn daar nog extra''s bijgekomen?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

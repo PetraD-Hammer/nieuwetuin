@@ -1,0 +1,38 @@
+uuid: 437cb1e0-0440-4a4e-a99a-dbbd0e1b16ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_fotowerkzaamheden
+    - taxonomy.vocabulary.timmer_werkzaamheden_tuin
+  module:
+    - image
+id: taxonomy_term.timmer_werkzaamheden_tuin.field_fotowerkzaamheden
+field_name: field_fotowerkzaamheden
+entity_type: taxonomy_term
+bundle: timmer_werkzaamheden_tuin
+label: FotoWerkzaamheden
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: 500kb
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

@@ -1,0 +1,8 @@
+uuid: 3e0929e1-60fb-47c7-909e-3d9283eab087
+langcode: en
+status: true
+dependencies: {  }
+id: werkzaamheden_blok
+label: 'Werkzaamheden blok'
+revision: 0
+description: 'Uitlichting per werkzaamheid met link naar de pagina'

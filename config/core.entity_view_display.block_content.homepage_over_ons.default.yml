@@ -1,0 +1,22 @@
+uuid: 862059c2-e363-4014-90c5-e59272a02177
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.homepage_over_ons
+    - field.field.block_content.homepage_over_ons.field_over_ons
+id: block_content.homepage_over_ons.default
+targetEntityType: block_content
+bundle: homepage_over_ons
+mode: default
+content:
+  field_over_ons:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

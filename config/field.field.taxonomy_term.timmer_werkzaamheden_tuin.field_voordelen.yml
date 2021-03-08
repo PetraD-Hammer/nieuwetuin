@@ -1,0 +1,23 @@
+uuid: acefe45b-baf9-4255-bb94-fad2c9085970
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_voordelen
+    - taxonomy.vocabulary.timmer_werkzaamheden_tuin
+  module:
+    - text
+id: taxonomy_term.timmer_werkzaamheden_tuin.field_voordelen
+field_name: field_voordelen
+entity_type: taxonomy_term
+bundle: timmer_werkzaamheden_tuin
+label: Voordelen
+description: 'Waarom kiezen voor Jim? Welke garantie heeft de klant?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

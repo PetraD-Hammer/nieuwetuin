@@ -1,0 +1,286 @@
+uuid: 3db498c7-4872-42c2-a667-98b16bbd89d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_blok
+    - field.field.block_content.contact_blok.body
+    - field.field.block_content.contact_blok.field_appen
+    - field.field.block_content.contact_blok.field_bel_mij_terug
+    - field.field.block_content.contact_blok.field_fotojim
+    - field.field.block_content.contact_blok.field_whatsapp
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - webform
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: Contactblok
+        components:
+          05e2abfc-43ff-4440-b63f-e5e3d88370f8:
+            uuid: 05e2abfc-43ff-4440-b63f-e5e3d88370f8
+            region: content
+            configuration:
+              id: 'field_block:block_content:contact_blok:field_appen'
+              label: Appen
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_id
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: 'bootstrap_layout_builder:blb_col_2'
+        layout_settings:
+          label: ''
+          container_wrapper_classes: ''
+          container_wrapper_attributes: null
+          container_wrapper:
+            bootstrap_styles:
+              background:
+                background_type: color
+              background_color:
+                class: null
+              background_media:
+                image:
+                  media_id: null
+                video:
+                  media_id: null
+                background_options:
+                  background_position: center
+                  background_repeat: no-repeat
+                  background_attachment: not_fixed
+                  background_size: cover
+              text_color:
+                class: null
+              text_alignment:
+                class: null
+              padding:
+                class: _none
+              padding_left:
+                class: _none
+              padding_top:
+                class: _none
+              padding_right:
+                class: _none
+              padding_bottom:
+                class: _none
+              margin:
+                class: _none
+              margin_left:
+                class: _none
+              margin_top:
+                class: _none
+              margin_right:
+                class: _none
+              margin_bottom:
+                class: _none
+              border:
+                border_style:
+                  class: null
+                border_width:
+                  class: _none
+                border_color:
+                  class: null
+                rounded_corners:
+                  class: _none
+                border_left_style:
+                  class: null
+                border_left_width:
+                  class: _none
+                border_left_color:
+                  class: null
+                border_top_style:
+                  class: null
+                border_top_width:
+                  class: _none
+                border_top_color:
+                  class: null
+                border_right_style:
+                  class: null
+                border_right_width:
+                  class: _none
+                border_right_color:
+                  class: null
+                border_bottom_style:
+                  class: null
+                border_bottom_width:
+                  class: _none
+                border_bottom_color:
+                  class: null
+                rounded_corner_top_left:
+                  class: _none
+                rounded_corner_top_right:
+                  class: _none
+                rounded_corner_bottom_left:
+                  class: _none
+                rounded_corner_bottom_right:
+                  class: _none
+              scroll_effects:
+                class: null
+          container_wrapper_bg_color_class: ''
+          container_wrapper_bg_media: null
+          container: container
+          section_classes: contact-block
+          section_attributes: null
+          regions_classes:
+            blb_region_col_1: ''
+            blb_region_col_2: ''
+          regions_attributes:
+            blb_region_col_1: null
+            blb_region_col_2: null
+          breakpoints:
+            desktop: blb_col_6_6
+            tablet: blb_col_6_6
+            mobile: blb_col_6_6
+          layout_regions_classes:
+            blb_region_col_1:
+              - col-lg-6
+              - col-md-6
+              - col-6
+            blb_region_col_2:
+              - col-lg-6
+              - col-md-6
+              - col-6
+          remove_gutters: '0'
+        components:
+          a2a0cd56-a19e-43f9-8428-6295671724c6:
+            uuid: a2a0cd56-a19e-43f9-8428-6295671724c6
+            region: blb_region_col_1
+            configuration:
+              id: 'field_block:block_content:contact_blok:field_fotojim'
+              label: FotoJim
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: full
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          2a2daa89-3b47-4249-90fd-30fd29a7e314:
+            uuid: 2a2daa89-3b47-4249-90fd-30fd29a7e314
+            region: blb_region_col_2
+            configuration:
+              id: 'field_block:block_content:contact_blok:body'
+              label: Body
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          83d281da-9904-4675-879b-5f37c1507615:
+            uuid: 83d281da-9904-4675-879b-5f37c1507615
+            region: blb_region_col_2
+            configuration:
+              id: 'field_block:block_content:contact_blok:field_bel_mij_terug'
+              label: 'Bel mij terug'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: webform_entity_reference_link
+                settings:
+                  label: 'Ik wil een afspraak met Jim'
+                  dialog: normal
+                  attributes:
+                    class:
+                      - '.btn btn-secondary btn-lg'
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 1
+          4128b61e-f0b8-484b-b7a9-d6ad6ff06b1c:
+            uuid: 4128b61e-f0b8-484b-b7a9-d6ad6ff06b1c
+            region: blb_region_col_2
+            configuration:
+              id: 'field_block:block_content:contact_blok:field_appen'
+              label: Appen
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_label
+                settings:
+                  link: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 2
+        third_party_settings: {  }
+id: block_content.contact_blok.default
+targetEntityType: block_content
+bundle: contact_blok
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_appen:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_bel_mij_terug:
+    weight: 2
+    label: above
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+  field_fotojim:
+    type: entity_reference_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_whatsapp:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

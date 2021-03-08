@@ -1,0 +1,22 @@
+uuid: 27504eea-ef32-4e52-bb7c-5dce0a93dde9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - jim_barrio
+_core:
+  default_config_hash: aJ6ps0sJm9MtQffqINgRms1JaSQgjsg68REaPdN-BGk
+id: jim_barrio_content
+theme: jim_barrio
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

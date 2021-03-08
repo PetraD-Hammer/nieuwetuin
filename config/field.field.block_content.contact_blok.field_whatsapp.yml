@@ -1,0 +1,26 @@
+uuid: 3d8f1bdb-d3cb-4d14-bdc5-473bad5c34c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_blok
+    - field.field.block_content.contact_blok.field_whatsapp
+    - field.storage.block_content.field_whatsapp
+id: block_content.contact_blok.field_whatsapp
+field_name: field_whatsapp
+entity_type: block_content
+bundle: contact_blok
+label: whatsapp
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: 3d8f1bdb-d3cb-4d14-bdc5-473bad5c34c9
+default_value_callback: ''
+settings:
+  handler: 'default:field_config'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

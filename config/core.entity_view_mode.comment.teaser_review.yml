@@ -1,0 +1,10 @@
+uuid: 8c0290a9-4660-4f56-93c4-1aadd562c141
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+id: comment.teaser_review
+label: 'teaser review'
+targetEntityType: comment
+cache: true

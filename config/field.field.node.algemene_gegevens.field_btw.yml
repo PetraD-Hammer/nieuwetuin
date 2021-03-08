@@ -1,0 +1,19 @@
+uuid: 97273422-a48c-4ea6-8d13-89e9a3935722
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_btw
+    - node.type.algemene_gegevens
+id: node.algemene_gegevens.field_btw
+field_name: field_btw
+entity_type: node
+bundle: algemene_gegevens
+label: BTW
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

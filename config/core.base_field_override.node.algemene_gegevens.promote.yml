@@ -1,0 +1,22 @@
+uuid: 904343b2-795e-4695-b84a-d947d6402900
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.algemene_gegevens
+id: node.algemene_gegevens.promote
+field_name: promote
+entity_type: node
+bundle: algemene_gegevens
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,128 @@
+uuid: 676bc0c8-71d3-47dc-ba7e-8e627d7bc433
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.timmer_werkzaamheden_tuin.field_foto
+    - field.field.taxonomy_term.timmer_werkzaamheden_tuin.field_fotowerkzaamheden
+    - field.field.taxonomy_term.timmer_werkzaamheden_tuin.field_info
+    - field.field.taxonomy_term.timmer_werkzaamheden_tuin.field_valkuilen
+    - field.field.taxonomy_term.timmer_werkzaamheden_tuin.field_voordelen
+    - image.style.wide
+    - taxonomy.vocabulary.timmer_werkzaamheden_tuin
+  module:
+    - image
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Werkzaamheden pagina'
+        components:
+          84e39c60-417e-46c5-a9e9-ef5ab71ab870:
+            uuid: 84e39c60-417e-46c5-a9e9-ef5ab71ab870
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:timmer_werkzaamheden_tuin:field_fotowerkzaamheden'
+              formatter:
+                label: hidden
+                settings:
+                  image_style: wide
+                  image_link: content
+                third_party_settings: {  }
+                type: image
+            additional: {  }
+            weight: 0
+          55c4bea0-2135-4da5-b6ca-7344151aef52:
+            uuid: 55c4bea0-2135-4da5-b6ca-7344151aef52
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:timmer_werkzaamheden_tuin:field_info'
+              formatter:
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 1
+          48b8aca9-9cff-464f-81e7-775d65a29615:
+            uuid: 48b8aca9-9cff-464f-81e7-775d65a29615
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:timmer_werkzaamheden_tuin:field_valkuilen'
+              formatter:
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 2
+          60923ae2-cce6-4f2a-a887-33670813f74c:
+            uuid: 60923ae2-cce6-4f2a-a887-33670813f74c
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:timmer_werkzaamheden_tuin:field_voordelen'
+              formatter:
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 3
+        third_party_settings: {  }
+id: taxonomy_term.timmer_werkzaamheden_tuin.default
+targetEntityType: taxonomy_term
+bundle: timmer_werkzaamheden_tuin
+mode: default
+content:
+  field_fotowerkzaamheden:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: wide
+      image_link: content
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_info:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_valkuilen:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_voordelen:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  description: true
+  field_foto: true

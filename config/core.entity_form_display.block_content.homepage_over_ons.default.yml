@@ -1,0 +1,31 @@
+uuid: 59b6529b-d0e3-4345-8cbf-4ce91ae18626
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.homepage_over_ons
+    - field.field.block_content.homepage_over_ons.field_over_ons
+id: block_content.homepage_over_ons.default
+targetEntityType: block_content
+bundle: homepage_over_ons
+mode: default
+content:
+  field_over_ons:
+    weight: 27
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

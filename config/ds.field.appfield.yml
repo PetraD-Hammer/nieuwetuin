@@ -1,0 +1,11 @@
+id: appfield
+label: Appfield
+ui_limit: ''
+properties:
+  content:
+    value: "<p>&lt;html&gt;</p>\r\n\r\n<p>&lt;a href=\"https://wa.me/31648405495\" style=\"text-decoration: none;\" target=\"_blank\"&gt;</p>\r\n\r\n<p>&lt;img src=\"https://i.ibb.co/N9P0K9H/239px-Whats-App-svg.png\" width=\"35\" height=\"35\"/&gt;<br />\r\n&lt;/a&gt;</p>\r\n\r\n<p>&lt;/html&gt;</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+    format: full_html
+type: token
+type_label: 'Token field'
+entities:
+  block_content: block_content
